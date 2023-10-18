@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebKovbasa", "WebKovbasa\WebKovbasa.csproj", "{CC48B67E-9FF7-422D-B505-B01C35ADE7B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC48B67E-9FF7-422D-B505-B01C35ADE7B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC48B67E-9FF7-422D-B505-B01C35ADE7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC48B67E-9FF7-422D-B505-B01C35ADE7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC48B67E-9FF7-422D-B505-B01C35ADE7B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87FBFF6C-90D0-447E-8EA6-04703431C1F1}
+	EndGlobalSection
+EndGlobal
