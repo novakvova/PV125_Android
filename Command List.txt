@@ -8,6 +8,10 @@ docker run -d --restart=always -v C:/images:/app/images --name web_kovbasa_conta
 docker build -t kovbasa_image .
 docker run -d --restart=always -v /var/www/android/kovbasa.itstep.click/images:/app/images --name kovbasa_container -p 5923:80 kovbasa_image
 
+docker stop kovbasa_container
+docker rm kovbasa_container
+
+docker rmi kovbasa_image
 
 http://localhsot:5453
 
