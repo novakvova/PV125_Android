@@ -1,0 +1,2 @@
+Вивести список категорій на Android за допомогою ListView
+https://kovbasa.itstep.click/api/Categories/list

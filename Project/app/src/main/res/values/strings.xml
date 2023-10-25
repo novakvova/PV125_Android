@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">Мій магазин</string>
-    <string name="click_me">Нажми мене</string>
-    <string name="input_enter">Ведіть значення</string>
+    <string name="click_me">Категорії</string>
 </resources>
