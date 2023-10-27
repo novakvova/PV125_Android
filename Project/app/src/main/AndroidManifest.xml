@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Store"
         tools:targetApi="31">
         <activity
+            android:name=".category.CategoryCreateActivity"
+            android:exported="false" />
+        <activity
             android:name=".CategoriesActivity"
             android:exported="false" />
         <activity
