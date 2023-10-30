@@ -45,11 +45,25 @@ namespace WebKovbasa.Controllers
         }
 
         [HttpPost("create")]
-        public async Task<IActionResult> Create([FromBody] CategoryCreateViewModel model)
+        public async Task<IActionResult> Create([FromForm] CategoryCreateViewModel model)
         {
             try
             {
                 var cat = _mapper.Map<CategoryEntity>(model);
+
+                string imageName = String.Empty;
+                if (model.Image != null)
+                {
+                    string exp = Path.GetExtension(model.Image.FileName);
+                    imageName = Path.GetRandomFileName() + exp;
+                    string dirSaveImage = Path.Combine(Directory.GetCurrentDirectory(), "images", imageName);
+                    using (var stream = System.IO.File.Create(dirSaveImage))
+                    {
+                        await model.Image.CopyToAsync(stream);
+                    }
+                }
+                cat.Image = imageName;
+
                 await _appEFContext.Categories.AddAsync(cat);
                 await _appEFContext.SaveChangesAsync();
                 return Ok(_mapper.Map<CategoryItemViewModel>(cat));
