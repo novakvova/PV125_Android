@@ -1,5 +1,6 @@
 package com.example.store.services;
 
+import com.example.store.contants.Urls;
 import com.example.store.network.CategoriesApi;
 
 import retrofit2.Retrofit;
@@ -12,7 +13,7 @@ public class ApplicationNetwork {
 
     public ApplicationNetwork() {
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://kovbasa.itstep.click")
+                .baseUrl(Urls.BASE)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
