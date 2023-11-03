@@ -17,6 +17,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.store.BaseActivity;
 import com.example.store.CategoriesActivity;
 import com.example.store.R;
 import com.example.store.application.HomeApplication;
@@ -36,7 +37,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class CategoryCreateActivity extends AppCompatActivity {
+public class CategoryCreateActivity extends BaseActivity {
 
     private static final int PICK_IMAGE_REQUEST = 1;
     private String filePath;
