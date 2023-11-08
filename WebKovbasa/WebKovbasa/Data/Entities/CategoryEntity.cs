@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using WebKovbasa.Data.Entities.Identity;
 
 namespace WebKovbasa.Data.Entities
 {
@@ -12,5 +13,9 @@ namespace WebKovbasa.Data.Entities
         public string Image { get; set; }
         [StringLength(4000)]
         public string Description { get; set; }
+
+        [ForeignKey("User")]
+        public int UserId { get; set; }
+        public virtual UserEntity User { get; set; }
     }
 }

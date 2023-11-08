@@ -12,5 +12,6 @@ namespace WebKovbasa.Data.Entities.Identity
         [StringLength(255)]
         public string Image { get; set; }
         public virtual ICollection<UserRoleEntity> UserRoles { get; set; }
+        public virtual ICollection<CategoryEntity> Categories { get; set; }
     }
 }
