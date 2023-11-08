@@ -5,11 +5,13 @@ using WebKovbasa.Data.Entities;
 using WebKovbasa.Data;
 using WebKovbasa.Models.Category;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebKovbasa.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoriesController : ControllerBase
     {
         private readonly AppEFContext _appEFContext;

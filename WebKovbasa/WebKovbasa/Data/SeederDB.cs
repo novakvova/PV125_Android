@@ -63,14 +63,16 @@ namespace WebKovbasa.Data
                         Name = "Ноутбуки",
                         Image = "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4OXzi?ver=3a58",
                         Description = "Для роботи і навчання",
-                        DateCreated = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc)
+                        DateCreated = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc),
+                        UserId=1
                     };
                     var clothes = new CategoryEntity
                     {
                         Name = "Одяг",
                         Image = "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/03/27/11/woman-clothing-happy.jpg?width=1200",
                         Description = "Для дівчат і хлопців",
-                        DateCreated = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc)
+                        DateCreated = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc),
+                        UserId = 1
                     };
                     context.Categories.Add(laptop);
                     context.Categories.Add(clothes);
